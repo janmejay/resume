@@ -1,0 +1,233 @@
+\documentclass[margin,line]{res}
+
+\usepackage{hyperref}
+\oddsidemargin -.5in
+\evensidemargin -.5in
+\textwidth=6.0in
+\itemsep=0in
+\parsep=0in
+% if using pdflatex:
+%\setlength{\pdfpagewidth}{\paperwidth}
+%\setlength{\pdfpageheight}{\paperheight} 
+
+\newenvironment{list1}{
+  \begin{list}{\ding{113}}{%
+      \setlength{\itemsep}{0in}
+      \setlength{\parsep}{0in} \setlength{\parskip}{0in}
+      \setlength{\topsep}{0in} \setlength{\partopsep}{0in} 
+      \setlength{\leftmargin}{0.17in}}}{\end{list}}
+\newenvironment{list2}{
+  \begin{list}{$\bullet$}{%
+      \setlength{\itemsep}{0in}
+      \setlength{\parsep}{0in} \setlength{\parskip}{0in}
+      \setlength{\topsep}{0in} \setlength{\partopsep}{0in} 
+      \setlength{\leftmargin}{0.2in}}}{\end{list}}
+
+
+\begin{document}
+
+\name{Janmejay Singh \vspace*{.1in}}
+
+\begin{resume}
+  \section{\sc Contact Information}
+  \vspace{.05in}
+  \begin{tabular}{@{}p{2in}p{4in}}
+    First Floor,                & {\it Phone:}  +91 99726 77488 \\            
+    186/A/2, Arnica Mont,       & {\it E-mail:}  \href{mailto:singh.janmejay@gmail.com}{singh.janmejay@gmail.com}\\       
+    5th Main, Malleshpalaya,    & {\it Blog:}    \url{http://codehunk.wordpress.com} \\         
+    Bangalore, Karnataka 560075 & {\it Github:} \url{https://github.com/janmejay} \\     
+    India                       & {\it GPG key:} \href{http://pgp.mit.edu:11371/pks/lookup?op=vindex&search=0x3A9F2343DA21772D}{2048R/DA21772D}\\
+  \end{tabular}
+
+
+\section{\sc Professional Interests and Direction}
+Solving problems that are technically challenging, not well understood and/or make a difference to the developer community or society, interest me a lot.\\
+\\
+I am interested in the areas of {\it algorithmic problems and analysis}, {\it performance and scalability tuning}, {\it paradigms of programming and programming languages}, {\it GNU/Linux kernel and userland} and any {\it Open Source work} in general.\\
+\\
+In addition to technical interests, I like, and have been instrumental in ensuring consistent and timely delivery and end-user satisfaction for very critical sub-systems in extremely competitive market and highly dynamic, agile environment at workplace.
+
+\section{\sc Skills}
+
+{\underline {\bf Proficient}} \hfill\\
+\vspace{-.3cm}
+\begin{list2}
+\item Performance testing and tuning(and testing), lock contention management, garbage collection issues(analysis, fixing and tuning), caching and transaction management and scaling up
+\item Cache tuning and coherence management etc
+\item Actor/queue based model to handle high concurrency and provide high throughput
+\item Java, JRuby and JVM internals
+\item Ruby, Javascript, Shell-script etc
+\item SQL tuning w/o ORM, connection-pool tuning etc
+\item GNU toolchain
+\item GNU/Linux, kernel and userland internals
+\item Pluginization, OSGi etc
+\item Object Modeling, Extreme Programming, Pair Programming, Test Driven Development, iteratively building complex software and other agile/lean methodology
+\item Build/CI tweaking and management
+\end{list2}
+
+{\underline {\bf Have played with in the past and/or otherwise interested in}} \hfill\\
+\vspace{-.3cm}
+\begin{list2}
+\item Machine Learning, Genetic Algorithm, Natural Language Processing
+\item Common Lisp, Elisp, Clojure
+\item Hadoop, ZooKeeper
+\item ZFS, btrfs, Ext4
+\item Python, PHP, Perl, Parrot VM
+\item Erlang, Haskell
+\item C, C++, OpenMP, Cuda computing
+\item MySQL, PostgreSQL
+\item strace, dtrace, SystemTap etc
+\item BSD Unix flavors
+\item Android SDK
+\item Intel Cilk Plus
+\end{list2}
+
+\section{\sc Community contribution}
+{\underline {\bf Open Source contribution}}\\
+\vspace{-.2cm}\\
+I firmly believe in Free and Open Source philosophy and do my best to contribute back to the (F)OSS community in my personal time.
+
+I am co-creator and maintainer of popular test parallelization solution called \href{http://test-load-balancer.github.com}{Test Load Balancer} (released under BSD 2-clause license) used by several projects within ThoughtWorks and outside of it. 
+TLB supports several test-runner and build-tool combinations across programming languages and provides one stop, minimal configuration solution to all test-parallelization needs. 
+It has also been the driver for some really interesting work we did like coming up with a novel approach to set-partitioning using genetic algorithm.
+
+In addition to my personal projects, I have also contributed patches amounting to several feature enhancements, additions and functional or performance bug-fixes to multiple open-source projects, some of the more popular being JRuby, Maven Surefire, Objenesis, UrlRewrite Filter etc.
+
+I also develop and maintain other tiny projects on github like .emacs.d repository that several emacs users collaborate on and a little android app meant to teach colors to kids etc.
+
+While working for Tavant, I drove the \href{http://sourceforge.net/projects/infrared}{InfraRED} (a J2EE performance monitoring app) integration effort to plug InfraRED with JBoss, Weblogic, Websphere, Jetty, Resin, Tomcat and OC4J etc.
+
+{\underline {\bf Conferences}}\\
+\vspace{-.2cm}\\
+Being a strong believer of sharing of knowledge \& ideas and hacker ethics, I have talked at several conferences about the projects that I work on and problems we solve including some of the more well known conferences like {\em JavaOne}, {\em RubyConf}, {\em Great Indian Developer Summit} and lesser known {\em Devops days}, {\em BarCamp}, {\em Rootconf} and {\em XConf} etc.\\
+
+\section{\sc Professional Experience}
+{\underline {\bf ThoughtWorks Studios}}\\
+\vspace{-.1cm}
+\href{http://www.thoughtworks-studios.com/go-agile-release-management}{\bf Go}: Agile release management suite\hfill {\bf August, 2009 - present}\\
+\vspace{-.2cm}\\
+{\em Problem}:\\
+Go is the first tool in its space to come up with a comprehensive domain to represent build and deployment as a first hand concept. It lets project teams model their process as is, without having to adapt to the tool, and provides visibility into progress and availability of code and features from check-in to deployment/release.\\
+Go aims to make Build, Deployment, Infrastructure Provisioning \& Management a breeze and helps dev-ops collaboration.\\
+\\
+{\em Revenue}:\\
+Within a span of 4 years as a product, Go has become profitable. It has about 100 customers globally.\\
+\\
+{\em Technology}:\\
+Heavily multi-threaded, background processing intensive application with JRuby on Rails front end, Spring IOC based Java backend, Spring MVC for parts of UI and RMI endpoints, Hibernate and IBatis talking to an embedded H2 Database, JQuery and Prototype on UI, embedded servlet container Jetty for hosting and Felix OSGi container for plugins.\\
+\\
+{\em Role}: \\
+Responsibility: Senior Developer (dev-2)\\
+In the last two years I have transitioned into pseudo tech-lead role wherein Im responsible for delivering the most critical and challenging of features, keeping performance up to the mark and mentoring other developers on the team technically.\\
+\\
+{\em Responsibility \& Key Challenges}:
+\vspace*{.05in}  
+\begin{list2}
+\item Designing and implementing key features while continuously refactoring and fixing code to keep it easily maintainable, extensible and performant on a 5 year old codebase, and helping other developers learn the same
+\item Ensuring continuous delivery, 2-4 weeks production releases(public GA) of the product
+\item Working with the developers/maintainers of open-source projects that are a part of Go tech-stack to write and submit patches to fix bugs or functional/performance enhancements
+\item Keeping the small delivery team inspired over long periods of time
+\item Ensuring quality in terms of functionality, performance and supporting customers
+\item Formalizing game changing ideas that eventually make differentiating features which give Go its leading edge
+\item Supporting customers in various time zones with an acceptable SLA
+\end{list2}
+
+%\vspace{-.1cm}
+{\underline {\bf ThoughtWorks}}\\
+\vspace{-.1cm}
+{\bf Connect}: app platform for CXO level corporate networking\hfill {\bf Mar, 2008 - July, 2009}\\
+\vspace{-.2cm}\\
+{\em Problem}:\\
+This platform codenamed {\em Connect} was built for a US based consulting giant. It was built by ThoughtWorks team and was later handed over to clients engineers for maintenance and use as a platform.\\
+\\
+{\em Technology}:\\
+Ruby on Rails application backed by MySQL DB using Phusion Passenger and Apache for deployment.\\
+\\
+{\em Role}: \\
+Responsibility: Developer (dev-1)\\
+On Connect I was responsible for developing the application, performance tuning it to scale well with thousands of online users at a time and managing multiple deployment environments for it.\\
+\\
+{\em Responsibility \& Key Challenges}:
+\vspace*{.05in}  
+\begin{list2}
+\item Writing some of the key components like user-profile analysis, making connection suggestions, community administration, profanity filter etc.
+\item Performance tuning database queries, optimizing page-load times and stripping content for better user-perceived performance
+\item Preparing and managing deployment environments before chef/puppet age using custom scripts and recipes. 
+\item Writing a capistrano based library which automated deployments in the entire client organization across several projects and standardized deployment infrastructure and libraries/components used across applications.
+\item Educating client support team on handling application deployment for Connect and other projects 
+\item Managing client expectations on critical and technically challenging features
+\item Integrating with dedicated Google appliance box for searches.
+\end{list2}
+
+{\bf Rezzline}: a hotel booking and search service\hfill {\bf August, 2007 - Mar, 2008}\\
+\vspace{-.2cm}\\
+{\em Problem}:\\
+Rezzline was a hotel search and reservation service based on a unique concept of directly integrating with hoteliers purely as a search engine and was aimed at changing the experience for travelers.\\
+\\
+{\em Technology}:\\
+Ruby on Rails application backed by MySQL DB using multiple Mongrel instance and Apache as reverse-proxy for deployment. The datastore was filled using data-crawlers operating in the backend.\\
+\\
+{\em Role}: \\
+Responsibility: Developer (dev-1)\\
+I was responsible for developing the frontend, backend services, crawler and client-kits to help hoteliers integrate with rezzline.\\
+\\
+{\em Responsibility \& Key Challenges}:
+\vspace*{.05in}  
+\begin{list2}
+\item Writing parallel crawler, relevance calculation algorithm and search mechanism
+\item Writing client kits in Python, Perl, Ruby and Java and providing it to hoteliers running their websites on different tech-stacks
+\item Maintaining the CI, functional testing  and deployment environment
+\end{list2}
+
+{\underline {\bf Tavant Technologies}}\\
+\vspace{-.1cm}
+\href{http://www.tavant.com/solutions/service\_operations/warranty\_index.html}{\bf Warranty Product}: Warranty and inventory management product\hfill {\bf Jul, 2006 - Jul, 2007}\\
+\vspace{-.2cm}\\
+{\em Problem}:\\
+The application is an state of the art warranty and extended warranty management system. It was packed with rule engine to allow easy customization at customer's end.\\
+\\
+{\em Technology}:\\
+Warranty was a Struts 2 MVC(then WebWork) application with Drools based workflow and event processing layer. It was backed by Spring IOC with Hibernate ORM working atop MySQL database. It had dojo based heavily ajax driven UI. It was deployed over embedded Jetty or JBoss AS.\\
+\\
+{\em Role}: \\
+Responsibility: Software Engineer\\
+I worked on Warranty as developer and maintainer of reusable UI components and widgets used throughout the app for thick-client like rich and snapy user-experience in browser.\\
+\\
+{\em Responsibility \& Key Challenges}:
+
+\vspace*{.05in}  
+\begin{list2}
+\item Created some complex UI components like tree-table, tabination-framework, spreadsheet like data-grid with filtering and search capabilities, rule-engine UI etc involving difficult interaction patterns
+\item Created an in-browser mini MVC framework to manage widget/component lib functionality cleanly
+\item Pulled easy to use interfaces from several such components and created a reusable Struts-2 jsp tag-library based on freemarker templates to enable developers to write purely declarative zero-javascript UI
+\item Helped several teams across the organization implement highly interactive and bug-free UI with minimal effort using this shared-library of widgets
+\end{list2}
+
+\section{\sc Formal \\Education}
+
+{\bf Indian Institute of Science, Bangalore}, Karnataka, India\\
+\vspace{-.3cm}
+\begin{list1}
+\item[] Short-term course: Artificial Intelligence and Intelligent Agents, 2010
+\end{list1}
+
+{\bf Indian Institute of Technology, Roorkee}, Uttarakhand, India\\
+\vspace{-.3cm}
+\begin{list1}
+\item[] B.Tech, 2006
+\end{list1}
+
+{\bf Kendriya Vidyalaya, Hisar}, Haryana, India\\
+\vspace{-.3cm}
+\begin{list1}
+\item[] 12th Std., 2001
+\item[] 10th Std., 1999
+\end{list1}
+
+
+\end{resume}
+\end{document}
+
+
+
+
