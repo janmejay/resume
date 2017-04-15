@@ -43,7 +43,7 @@
   \vspace{.1cm}
 \item Unique, deep mix of expertise across {\it large scale systems}, {\it systems engineering}, {\it data-center networking}, {\it application development and lifecycle management} and {\it performance engineering}.
   \vspace{.1cm}
-\item Someone people love to work with and bank upon.
+\item Someone people love to work with and depend on.
   \vspace{.1cm}
 \item Open-source \& free-software contributor and enthusiast.
 \end{list2}
@@ -51,8 +51,8 @@
 \section{\sc Specialties}
 \vspace{.4cm}
 \begin{tabular}{@{}p{3.3in}p{3.3in}}
-{\bf S}ystem \& Application Architectures for Scale          &  {\bf N}etworking \& Protocol Design                        \\ [0.2cm]
-{\bf H}igh-throughput, Multi-tennant SaaS Systems            &  {\bf S}ystem/Application Performance Management            \\ [0.2cm]
+{\bf S}ystem \& Application Architectures for Extreme Scale  &  {\bf N}etworking \& Protocol Design                        \\ [0.2cm]
+{\bf M}ulti-tenant SaaS Systems                              &  {\bf S}ystem/Application Performance Management            \\ [0.2cm]
 {\bf C}, C++, Java/JVM and scripting                         &  {\bf D}istributed Systems                                  \\ [0.2cm]
 {\bf E}fficient, Highly-Concurrent Systems                   &  {\bf D}evelopment \& Delivery Best Practices               \\ [0.2cm]
 {\bf L}inux/Unix-like Operating Systems                      &  {\bf B}uild-tools/envs, Releases \& Deployments
@@ -70,37 +70,41 @@ Flipkart is the leader in e-commerce segment in India. In addition to maturing t
 \\
 Flipkart is built as an eco-system of largely Java/JVM-based services that are deployed over a private cloud and supported by a bunch of horizontal and vertical services together called {\em Flipkart Cloud Platform (FCP)}.\\
 \\
-As a {\bf Senior Architect}, {\em January, 2017 onwards}, I have been responsible for,\\
+As a {\bf Senior Architect}; {\em January, 2017 onwards}; I have been responsible for,\\
 \begin{list2}
-\item Guiding ground-up re-architecture of extremely critical components like Flipkart\'s transactional-ordered-message-bus providing 4 - 5 years gurantee of seemless scalability without major code-changes
-\item Architecting and delivering \href{https://github.com/Flipkart/fk-prof}{\em Flipkart Continious Profiler, fk-prof}, which would be performance management backbone for all Java/JVM based applications in prepration for critical, load-intensive events like BigBillionDay sale. Fk-prof would seemlessly stitch system-level, application-level and JVM-level performance pivots and provide 1-touch performance-profiling capability and visibility at an application-cluster level
+\item Guiding ground-up re-architecture of extremely critical components like Flipkart\'s transactional-ordered-message-bus providing 4 - 5 years guarantee of seamless scalability without major code-changes
+\item Architecting and delivering \href{https://github.com/Flipkart/fk-prof}{\em Flipkart Continuous Profiler, fk-prof}, which would be performance management backbone for all Java/JVM based applications in preparation for critical, load-intensive events like BigBillionDay sale. Fk-prof would seamlessly stitch system-level, application-level and JVM-level performance pivots and provide 1-touch performance-profiling capability and visibility at an application-cluster level
 \item Responsible for all architectural decisions across large portion of Platform-as-a-Service (PaaS) side of infrastructure team. This includes decisions around introducing new architectural components, addressing scalability challenges, identifying potential issues and reviewing/improving system-design and sometimes low-level design etc.
-\item Consultant/Advisor to teams outside of infrastructure group on complex problems such as state-maintainence in low-latency, high-traffic, fault-tolerant critical business systems with competing consistency and availability expectations.
+\item Consultant/Advisor to teams outside of infrastructure group on complex problems such as state-maintenance in low-latency, high-traffic, fault-tolerant critical business systems with competing consistency and availability expectations.
 \end{list2}
 
-As an {\bf Architect}, {\em December, 2013 - December, 2016}, I have been responsible for,\\
+As an {\bf Architect}; {\em September, 2014 - December, 2016}; I was responsible for,\\
 \begin{list2}
-\item Conceptualization, development, benchmarking and rollout of 2 generations of log-indexing-and-storage service called {\em LogSvc}. The 2nd generation of LogSvc (currently in service) handles extreme scale of {\em 2.2 million events per second of indexing} and {\em 1.5 million events per second of storage} traffic and is one of the largest known deployment of certain technologies in the world.
+\item Conceptualization, development, benchmarking and rollout of 2 generations of log-indexing-and-storage service called {\em LogSvc}. The 2nd generation of LogSvc (currently in service) handles extreme scale of {\em 2.2 million events per second of indexing} and {\em 1.5 million events per second of storage} traffic and is one of the largest known deployment of some of the technologies involved, in the world.
 \item Major contribution to open-source projects identified as critical LogSvc dependencies. Eg. {\em Rsyslog} got major features such as \href{https://github.com/rsyslog/rsyslog/pull/614}{\em dynamic-stats} and \href{https://github.com/rsyslog/rsyslog/pull/578}{\em lookup-table} and major performance-fixes such as \href{https://github.com/rsyslog/rsyslog/pull/567}{\em ptcp-work-allocation-improvements} and many other patches. Hadoop, Solr, librdkafka etc were other projects where critical problems were fixed or major improvements were made.
-\item write about debugging (pkt-loss, ekart unresponsiveness, cosmos-issues, ad-platform issues etc)
+\item Building some key infrastructural components such as l3tc (layer-3 transparent compressor for network traffic, lined-up to be open-sourced, that allowed applications to achieve higher efficiency in previous-generation hub-and-spoke data-center fabric built over 1Gbps NICs). Other similar components include protectors for DDoS-like-surges for event ingestion.
+\item Owning and leading several BigBillionDays (BBD) scaling efforts across several flipkart services. These efforts involved everything ranging from large system-design or deployment-topology changes to tuning/re-writing areas of code. Was also involved as an advisor with several application-teams that required help scaling for BBD load.
+\item Owning and leading debugging of several show-stopper infrastructural and application-level issues during data-center roll-out. Issues ranging from MTU issues and port-reuse misconfigurations to application-level logic distributed deadlocks grinding production to a halt.
 \end{list2}
 
-As an {\bf SDE-3}, {\em August, 2012 - November, 2013}, I have been responsible for,\\
+As an {\bf SDE-3}; and towards the end as an {\bf Architect}; {\em August, 2012 - August, 2014}; I was responsible for,\\
 \begin{list2}
-\item fill pricing stuff
+\item Bootstrapping the pricing team at Flipkart (pricing was a second-class function until then), this required extracting legacy code embedded into catalog-management-system out into its own service and a plethora of improvement changing pricing-function at Flipkart from an overhead to a potent business lever.
+\item Architecting and building an set of business critical systems that gave Flipkart a strong edge against then-relevant competition like homeshop18, infibeam, snapdeal etc.
+\item Pricing-Engine v2 design that was aimed at allowing rapid and safe roll-out of human-intelligence in pricing and eventually to learn relative-performance-patterns of different pricing-algorithms across product-categories, to eventually allow goal-oriented fully-automatic pricing.
 \end{list2}
 
 {\underline {\bf ThoughtWorks Studios}}\\
 \\
 \href{https://www.thoughtworks.com/go/}{\bf Go-CD}: Agile release management suite\hfill {\bf August, 2009 - July, 2012}\\
 \vspace{-.2cm}\\
-Go-CD was the first CI product to bridge development and deployment together, hence introducing the concept of CD (continious deployment), unlocking automation and productivity, in addition to visibility into software moving from development to deployment/release. In summer of 2012, Go-CD was profitable with about 100 customers globally.\\
+Go-CD was the first CI product to bridge development and deployment together, hence introducing the concept of CD (continuous deployment), unlocking automation and productivity, in addition to visibility into software moving from development to deployment/release. In summer of 2012, Go-CD was profitable with about 100 customers globally.\\
 \\
 Heavily multi-threaded, background processing intensive application with JRuby on Rails front end, Spring IOC based Java backend, Spring MVC for parts of UI and RMI endpoints, Hibernate and IBatis talking to an embedded H2 Database, JQuery and Prototype on UI, embedded servlet container Jetty for hosting and Felix OSGi container for plugins.\\
 \\
-As a {\bf Dev-2 (Senior Developer)}, I was key contributor in first two years and a pseudo tech-lead in the last year, delivering the most critical and challenging of features, keeping performance up to the mark and mentoring other developers on the team technically. My key contributions were,\\
+As a {\bf Dev-2 (Senior Developer)}; I was key contributor in first two years and a pseudo tech-lead in the last year, delivering the most critical and challenging of features, keeping performance up to the mark and mentoring other developers on the team technically. My key contributions were,\\
 \begin{list2}
-\item Designed and implemented several key features while continuously refactoring and improving a 5 yr old codebase for maintainablity, extensiblity and performance
+\item Designed and implemented several key features while continuously refactoring and improving a 5 yr old codebase for maintainability, extensibility and performance
 \item Ensured jerk-free continuous delivery, 2-4 weeks production releases(public GA) of the product
 \item Contribute to public-domain libraries Go-CD uses as bug or functional/performance fixes
 \item Formalizing game changing ideas that made differentiating features keeping us on leading edge
@@ -114,7 +118,7 @@ This platform codenamed Connect was built for a US based consulting giant. It wa
 \\
 Ruby on Rails application backed by MySQL DB using Phusion Passenger and Apache for deployment.\\
 \\
-As a {\bf Dev-1}, 
+As a {\bf Dev-1},
 \begin{list2}
 \item Wrote some key components like user-profile analysis, connection suggestions, community administration, profanity filter etc.
 \item Performance tuned database queries, optimized page-load times and tuned content for better user-perceived performance
@@ -129,7 +133,7 @@ Rezzline was a hotel search and reservation service based on a unique concept of
 \\
 Ruby on Rails application backed by MySQL DB using multiple Mongrel instances and Apache as reverse-proxy for deployment. The datastore was filled using data-crawlers operating in the backend.\\
 \\
-As a {\bf Dev-1}, I co-owned the frontend, backend services, crawler and client-kits to help hoteliers integrate with Rezzline and my major contributions were,\\
+As a {\bf Dev-1}; I co-owned the frontend, backend services, crawler and client-kits to help hoteliers integrate with Rezzline and my major contributions were,\\
 \begin{list2}
 \item Parallel crawler, relevance calculation algorithm and search mechanism
 \item Client kits in Python, Perl, Ruby and Java and providing it to hoteliers running their websites on different tech-stacks
@@ -153,23 +157,20 @@ As a {\bf Software Engineer},
 \end{list2}
 
 \section{\sc Community contribution}
-        {\underline {\bf Open Source contribution}}\\
-        \vspace{-.2cm}\\
-        I firmly believe in Free and Open Source philosophy and do my best to contribute back to the (F)OSS community in personal time.
+{\underline {\bf Open Source contribution}}\\
+\vspace{-.2cm}\\
+\begin{list2}
+\item Member of \href{https://github.com/rsyslog}{\bf Rsyslog} core-team. Have contributed several {\em major horizontal and vertical features} across Rsyslog and Lognorm; {\em reasoned and fixed intricate race-conditions} across core and io-modules, {\em fixed semantic-flaws and design-gaps in Rainerscript grammar, evaluation and state-maintenance} etc.
+\item Major contributor to \href{https://github.com/Flipkart/fk-prof}{\bf Flipkart's In-Prod Continuous Java Profiler}. Architect of the product and developer/owner of JVM and System integration and performance-data-collection component.
+\item Overtook maintainership of a heavily forked runtime application-stats/metrics reporting library for C++, called \href{https://github.com/janmejay/medida}{\bf Medida}. Combed this race-condition laden but functionally good-quality implementation and making it very reliable. Have also added features such as UDP reporting to desired port with externalized formatting etc.
+\item Co-author and maintainer of \href{http://test-load-balancer.github.io/}{\bf Test-Load-Balancer}, a test-workload-parallelization solution with integration for several mainstream build and test-execution frameworks.
+\item Have contributed patches primarily around performance, functional-issues or concurrency safety fixes across several other projects such as Solr, Hadoop, Rdkafka, JRuby, Maven Surefire, Objenesis, UrlRewrite Filter etc.
+\item Have contributed several utility scripts, ebuild-overlay for some dev-libs(not available in other overlays) for Gentoo and well-maintained productivity-tuned configuration for Emacs, terminal-multiplexer, window-manager etc that a lot of engineers have found useful.
+\end{list2}
 
-        I am co-creator and maintainer of popular test parallelization solution called \href{http://test-load-balancer.github.com}{Test Load Balancer} (released under BSD 2-clause license) used by several projects within ThoughtWorks and outside of it. 
-        TLB supports several test-runner and build-tool combinations across programming languages and provides one stop, minimal configuration solution to all test-parallelization needs. 
-        It has also been the driver for some really interesting work we did, for instance, coming up with a novel approach to set-partitioning using genetic algorithm.
-
-        In addition to my personal projects, I have also contributed patches amounting to several feature enhancements, additions and functional or performance bug-fixes to multiple open-source projects, some of the more popular being JRuby, Maven Surefire, Objenesis, UrlRewrite Filter etc.
-
-        I also develop and maintain other tiny projects on github like .emacs.d repository that several emacs users collaborate on and a little android app meant to teach colors to kids etc.
-
-        While working for Tavant, I drove the \href{http://sourceforge.net/projects/infrared}{InfraRED} (a J2EE performance monitoring app) integration effort to plug InfraRED with JBoss, Weblogic, Websphere, Jetty, Resin, Tomcat and OC4J etc.
-
-        {\underline {\bf Conferences}}\\
-        \vspace{-.2cm}\\
-        Being a strong believer in sharing of knowledge or ideas and hacker ethics, I have talked at several conferences about the projects that I work on and problems we solve including some of the more well known conferences like {\em JavaOne}, {\em RubyConf}, {\em Great Indian Developer Summit} and lesser known {\em Devops days}, {\em BarCamp}, {\em Rootconf} and {\em XConf} etc.\\
+{\underline {\bf Conferences}}\\
+\vspace{-.2cm}\\
+Being a strong believer in sharing of knowledge or ideas and hacker ethics, In the past I have talked at several conferences including some of the more well known conferences like {\em Flipkart's SlashN}, {\em JavaOne}, {\em Rootconf}, {\em RubyConf}, {\em Great Indian Developer Summit} and lesser known {\em Devops days}, {\em BarCamp} and {\em Thoughtworks' XConf} etc.\\
 
 \section{\sc Formal \\Education}
 
@@ -191,7 +192,6 @@ As a {\bf Software Engineer},
 \item[] 12th Std. CBSE, 2001
 \item[] 10th Std. CBSE, 1999
 \end{list1}
-
 
 \end{resume}
 \end{document}
